@@ -1,0 +1,90 @@
+.showAvatar{
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.showAvatar .img{
+    margin-top: 300px;
+    width: 80%;
+}
+
+.showAvatar img{
+    width: 300px;
+}
+
+
+.iconOffAvatar{
+    width: 90px;
+    height: 90px;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 28px;
+    font-size: 40px;
+}
+
+.iconOffAvatar:hover{
+    background-color: red;
+}
+
+
+.good .item{
+    position: relative;
+}
+
+.item-hover{
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    padding: 0 50px;
+    animation: fade 0.25s linear;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.icon-item{
+    color: #A53F48;
+}
+
+.text-item{
+    color: black;
+}
+
+.good-at,.my-work,.contact-me{
+    visibility: hidden;
+    opacity: 0;
+
+}
+
+
+.active{
+    transition: all 2s linear;
+    opacity: 1;
+    visibility: visible;
+}
+
+.show{
+    color: red;
+    text-decoration: underline;
+    
+}
+
+.showInfo{
+    color: #A53F48;
+    background-color: white;
+}
